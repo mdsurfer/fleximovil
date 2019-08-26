@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fleximovil - Fibra, Movil, Internet 4G</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="css/mdb.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/radios-to-slider.min.css">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-topbar">
+            <div class="wrapper topbar-wrapper">
+                <div class="phoneNumber white-t">
+                    <span>+34 6844 200 02</span>
+                </div>
+                <div class="langbar">
+                    <a href="#" class="langbar-link">Espanol</a>
+                    <a href="#" class="langbar-link">English</a>
+                </div>
+            </div>
+        </div>
+        <div id="header" class="header-wrapper wrapper grid gap middle">
+            <div class="header-logo">
+                <img src="img/fm-logo.png" alt="Fleximovil - Fibra, Movil, Internet 4G">
+            </div>
+
+            <div class="gap header-menu">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item active"><a href="#" class="header-menu__link">Tarifas Móvil</a></li>
+                    <li class="header-menu__item"><a href="#" class="header-menu__link">Fibra + Móvil</a></li>
+                    <li class="header-menu__item"><a href="#" class="header-menu__link">Ofertas</a></li>
+                    <li class="header-menu__item"><a href="#" class="header-menu__link">Tu tarifa</a></li>
+                </ul>
+                <div class="client-area">
+                    <a href="#" class=" green-btn btn"><i class="fas fa-user-lock"></i><span>Soy Flexi</span></a>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <a href="#" id="mobileMenu" class="burger menu-link white-t">&#9776;</a>
+                <a href="#" id="mobileMenuClose" class="hide menu-link white-t">&times;</a>
+            </div>
+
+        </div>
+        <!-- MOBILE NAV-->
+        <div id="header-nav-mob" class="header-nav-mob">
+            <div class="header-mob-menu">
+                <ul class="header-mob-menu__list grid">
+                    <li class="header-mob-menu__item grid">
+                        <a href="#" class="header-mob-menu__link"><span class="lnr lnr-smartphone"></span>Tarifas Móvil</a>
+                    </li>
+                    <li class="header-mob-menu__item grid">
+                        <a href="#" class="header-mob-menu__link"><span class="lnr lnr-laptop-phone"></span> Fibra + Móvil</a>
+                    </li>
+                    <li class="header-mob-menu__item grid">
+                        <a href="#" class="header-mob-menu__link"><span class="lnr lnr-tag"></span> Ofertas</a>
+                    </li>
+                    <li class="header-mob-menu__item grid">
+                        <a href="#" class="header-mob-menu__link"><span class="lnr lnr-star"></span> Tu tarifa</a>
+                    </li>
+                </ul>
+                <div class="client-area-mob">
+                    <a href="#" class="btn green-btn fullwidth">
+                        <i class="fas fa-user-lock"></i><span>Soy Flexi</span>
+                    </a>
+                </div>
+                <div class="header-nav-mob__bottom-menu">
+                    <ul class="bottom-menu__list">
+                        <li class="bottom-menu-item"><a href="#" class="bottom-menu-link">Empresas</a></li>
+                        <li class="bottom-menu-item"><a href="#" class="bottom-menu-link">Ayuda</a></li>
+                        <li class="bottom-menu-item"><a href="#" class="bottom-menu-link">Empresas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END MOBILE NAV-->
+    </header>
+    <section id="top" class="top-section">
+        <div class="top-wrapper wrapper grid">
+            <div class="offer grid">
+                <h1>Feel the speed with Fleximovil</h1>
+               <div class="slide-content">
+                   <img src="img/main-promo.png" alt="" class="slide-pic">
+                   <p class="description">
+                       Elige tu proprio tarifa<br>
+                       y disfruta servicios de calitad
+                   </p>
+               </div>
+
+
+            </div>
+            <div class="calculator">
+                <h2>CREA TU PROPIA TARIFA<br><sub>prepago o cotrato</sub></h2>
+                <form action="" class="grid">
+                    <div class="form-item">
+                        <h3>Elige tu megas</h3>
+                        <div class="block calculator__block">
+                            <div id="gigas" class="calculator__options">
+                                <input id="0mb" name="options" type="radio">
+                                <label for="0mb">0</label>
+                                <input id="500mb" name="options" type="radio">
+                                <label for="500mb">500</label>
+                                <input id="1000mb" name="options" type="radio" checked>
+                                <label for="1000mb">1000</label>
+                                <input id="2000mb" name="options" type="radio">
+                                <label for="2000mb">2000</label>
+                                <input id="3000mb" name="options" type="radio">
+                                <label for="3000mb">3000</label>
+                                <input id="5000mb" name="options" type="radio">
+                                <label for="5000mb">5000</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <h3>Elige tu minutos</h3>
+                        <div class="block calculator__block">
+                            <div id="minutos" class="calculator__options">
+                                <input id="0min" name="options" type="radio">
+                                <label for="0min">0</label>
+                                <input id="100min" name="options" type="radio">
+                                <label for="100min">100</label>
+                                <input id="500min" name="options" type="radio" checked>
+                                <label for="500min">500</label>
+                                <input id="1000min" name="options" type="radio">
+                                <label for="1000min">1000</label>
+                                <input id="ilimm" name="options" type="radio" >
+                                <label for="ilimm">ilim</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <h3>Elige tu FIBRA velocidad (Mbps)</h3>
+                        <div class="block calculator__block">
+                            <div id="fibra" class="calculator__options">
+                                <input id="0mbps" name="options" type="radio">
+                                <label for="0mbps">0</label>
+                                <input id="100mbps" name="options" type="radio" checked>
+                                <label for="100mbps">100</label>
+                                <!-- <input id="600mbps" name="options" type="radio">
+                                <label for="600mbps">600</label> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-total">
+                        <div class="calculator-sum">
+                            <p class="heading">TOTAL</p>
+                            <p class="total-sum">37'<sup>99</sup><span>€/mes</span></p>
+                        </div>
+                        <div class="calculator-cta">
+                            <a href="#" class="link_item btn brand-green">Lo Quiero</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="promo" class="promos">
+        <div class="promo-wrapper grid wrapper">
+            <a href="#" class="offer-link wide-offer" style="background: url('/img/wide-offer.jpg') no-repeat right top;" title="DISFRUTA 4G RED CON FLEXIMOVIL"><span class="promo-title">DISFRUTA 4G RED CON FLEXIMOVIL</span></a>
+            <a href="#" class="offer-link short-offer" title="FIBRA OPTICA PARA SIEMPRE GRATIS"><span class="promo-title">FIBRA OPTICA PARA SIEMPRE GRATIS</span></a>
+        </div>
+    </section>
+    <section id="offers" class="offers">
+        <div class="offers-wrapper wrapper">
+            <h2>¡TARIFAS LOS POPULARES Y NUEVAS!</h2>
+            <div class="product-list">
+                <div class="product-item-widget">
+                    <div class="product-card">
+                        <div class="main-circle brandbg-v">
+                            <div class="internal-circle"></div>
+                            <h3 class="product-title white-t">MOVIL <span>+</span> FIBRA</h3>
+                            <div class="corner-circle">
+                                <a href="#" class="info-link">
+                                    <span class="info-btn"><i class="fas fa-info-circle"></i></span></a>
+                                <div class="corner-data">
+                                    <p class="corner-price">19.95<span>€</span></p>
+                                    <p class="iva">IVA inc.</p>
+                                </div>
+
+                            </div>
+                            <div class="product-details">
+                                <ul class="details-list">
+                                    <li class="list-item white-t">100 Mbps</li>
+                                    <li class="list-item white-t">500 min</li>
+                                    <li class="list-item white-t">3 GB</li>
+                                    <li class="list-item white-t">Fijo 100 min</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-cta">
+                            <a href="#" class="link_item btn btn-rounded brand-green">Lo Quiero</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-widget">
+                    <div class="product-card">
+                        <div class="main-circle cyanbg">
+                            <div class="internal-circle"></div>
+                            <h3 class="product-title white-t">FLEXI VOZ</h3>
+                            <div class="corner-circle">
+                                <a href="#" class="info-link">
+                                    <span class="info-btn"><i class="fas fa-info-circle"></i></span></a>
+                                <div class="corner-data">
+                                    <p class="corner-price">7<span>€</span></p>
+                                    <p class="iva">IVA inc.</p>
+                                </div>
+
+                            </div>
+                            <div class="product-details">
+                                <ul class="details-list">
+                                    <li class="list-item white-t">llamadas ilimitados</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-cta">
+                            <a href="#" class="link_item btn btn-rounded brand-green">Lo Quiero</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-widget">
+                    <div class="product-card">
+                        <div class="main-circle dark-yellow">
+                            <div class="internal-circle"></div>
+                            <h3 class="product-title white-t">FLEXI 3</h3>
+                            <div class="corner-circle">
+                                <a href="#" class="info-link">
+                                    <span class="info-btn"><i class="fas fa-info-circle"></i></span></a>
+                                <div class="corner-data">
+                                    <p class="corner-price">11<span>€</span></p>
+                                    <p class="iva">IVA inc.</p>
+                                </div>
+
+                            </div>
+                            <div class="product-details">
+                                <ul class="details-list">
+                                    <li class="list-item white-t">llamadas ilimitados</li>
+                                    <li class="list-item white-t">3GB</li>
+                                    <li class="list-item white-t">Red 4G</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-cta">
+                            <a href="#" class="link_item btn btn-rounded brand-green">Lo Quiero</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-widget">
+                    <div class="product-card">
+                        <div class="main-circle dark-violet">
+                            <div class="internal-circle"></div>
+                            <h3 class="product-title white-t">FLEXI 10</h3>
+                            <div class="corner-circle">
+                                <a href="#" class="info-link">
+                                    <span class="info-btn"><i class="fas fa-info-circle"></i></span></a>
+                                <div class="corner-data">
+                                    <p class="corner-price">16<span>€</span></p>
+                                    <p class="iva">IVA inc.</p>
+                                </div>
+
+                            </div>
+                            <div class="product-details">
+                                <ul class="details-list">
+                                    <li class="list-item white-t">llamadas ilimitados</li>
+                                    <li class="list-item white-t">10GB</li>
+                                    <li class="list-item white-t">Red 4G</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-cta">
+                            <a href="#" class="link_item btn btn-rounded brand-green">Lo Quiero</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fibra-check" class="fibra-check">
+        <div class="fibra-wrapper wrapper">
+            <h2 class="section-title white-t">¿Conoces la fibra de Fleximovil?</h2>
+            <div class="fibra-check-content grid">
+                <div class="fibra-check-pic">
+                    <img src="img/fibra-check.png" alt="Fibra check">
+                </div>
+                <div class="fibra-check-adv">
+                    <ul class="fibra-advantages-list grid white-t">
+                        <li class="advantages-item">
+                            <div class="svg-icon">
+                                <svg version="1.2" baseProfile="tiny" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 438.7 438.7" xml:space="preserve">
+                                    <g>
+                                        <path d="M386.4,0h-298C61.6,0,39.7,21.8,39.7,48.6v2.7C19.3,54.7,3.7,72.5,3.7,93.9v283.4c0,33.9,27.6,61.5,61.5,61.5
+                                            c27.3,0,50.6-18,58.5-42.7h262.7c26.8,0,48.6-21.8,48.6-48.6V48.6C435,21.8,413.2,0,386.4,0z M65.1,424.7
+                                            c-26.2,0-47.5-21.3-47.5-47.5V93.9c0-13.6,9.4-25.1,22.1-28.2v281.7c0,26.8,21.8,48.6,48.6,48.6h20.4
+                                            C101.4,412.9,84.7,424.7,65.1,424.7z M421,347.4c0,19.1-15.5,34.6-34.6,34.6h-260c0.1-1.6,0.2-3.2,0.2-4.8v-4.9h21.1
+                                            c16.4,0,29.7-13.3,29.7-29.7V53.4c0-16.4-13.3-29.7-29.7-29.7H91.5c-16.4,0-29.7,13.3-29.7,29.7v289.3c0,16.4,13.3,29.7,29.7,29.7
+                                            h21.1v4.9c0,1.6-0.1,3.2-0.2,4.8h-24c-19.1,0-34.6-15.5-34.6-34.6V48.6C53.7,29.5,69.3,14,88.4,14h298c19.1,0,34.6,15.5,34.6,34.6
+                                            L421,347.4L421,347.4z M91.5,358.4c-8.7,0-15.7-7-15.7-15.7V53.4c0-8.7,7-15.7,15.7-15.7h56.2c8.7,0,15.7,7,15.7,15.7v289.3
+                                            c0,8.7-7,15.7-15.7,15.7L91.5,358.4L91.5,358.4z"/>
+                                        <path d="M349.1,163.1L339,173.3v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H349.1z M384.4,188.4l-2,2h-27.4l-2-2v-9.3l2-2h27.4
+                                            l2,2V188.4z"/>
+                                        <path d="M280.2,163.1L270,173.3v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H280.2z M315.4,188.4l-2,2H286l-2-2v-9.3l2-2h27.4
+                                            l2,2V188.4z"/>
+                                        <path d="M211.2,163.1l-10.2,10.2v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H211.2z M246.4,188.4l-2,2H217l-2-2v-9.3l2-2h27.4
+                                            l2,2V188.4z"/>
+                                        <path d="M349.1,214.2L339,224.4v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H349.1z M384.4,239.4l-2,2h-27.4l-2-2v-9.3l2-2h27.4
+                                            l2,2V239.4z"/>
+                                        <path d="M280.2,214.2L270,224.4v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H280.2z M315.4,239.4l-2,2H286l-2-2v-9.3l2-2h27.4
+                                            l2,2V239.4z"/>
+                                        <path d="M211.2,214.2l-10.2,10.2v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H211.2z M246.4,239.4l-2,2H217l-2-2v-9.3l2-2h27.4
+                                            l2,2V239.4z"/>
+                                        <path d="M349.1,265.3L339,275.5v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2L349.1,265.3L349.1,265.3z M384.4,290.5l-2,2h-27.4
+                                            l-2-2v-9.3l2-2h27.4l2,2V290.5z"/>
+                                        <path d="M280.2,265.3L270,275.5v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2L280.2,265.3L280.2,265.3z M315.4,290.5l-2,2H286
+                                            l-2-2v-9.3l2-2h27.4l2,2V290.5z"/>
+                                        <path d="M211.2,265.3l-10.2,10.2v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2L211.2,265.3L211.2,265.3z M246.4,290.5l-2,2H217
+                                            l-2-2v-9.3l2-2h27.4l2,2V290.5z"/>
+                                        <path d="M349.1,316.4L339,326.5v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H349.1z M384.4,341.6l-2,2h-27.4l-2-2v-9.3l2-2h27.4
+                                            l2,2V341.6z"/>
+                                        <path d="M280.2,316.4L270,326.5v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H280.2z M315.4,341.6l-2,2H286l-2-2v-9.3l2-2h27.4
+                                            l2,2V341.6z"/>
+                                        <path d="M211.2,316.4l-10.2,10.2v20.9l10.2,10.2h39l10.2-10.2v-20.9l-10.2-10.2H211.2z M246.4,341.6l-2,2H217l-2-2v-9.3l2-2h27.4
+                                            l2,2V341.6z"/>
+                                        <path d="M377.4,132.5l15.5-15.5V88.8l-15.5-15.5H222l-15.5,15.5v28.2l15.5,15.5H377.4z M220.5,94.6l7.3-7.3h143.9l7.3,7.3v16.6
+                                            l-7.3,7.3H227.8l-7.3-7.3V94.6z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class="adv-title">Fibra Simétrica de Orange + llamadas</p>
+                        </li>
+                        <li class="advantages-item">
+                            <div class="svg-icon">
+                                <svg version="1.2" baseProfile="tiny" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                                    <path d="M224.7,43.9c-2,0-4-0.8-5.5-2.4l-15.8-17c-2.8-3-2.6-7.8,0.4-10.6c3-2.8,7.8-2.6,10.6,0.4l15.8,17c2.8,3,2.6,7.8-0.4,10.6
+                                        C228.4,43.3,226.6,43.9,224.7,43.9z"/>
+                                    <path d="M296.2,43.9c-1.8,0-3.7-0.7-5.1-2c-3-2.8-3.2-7.6-0.4-10.6l15.8-17c2.8-3,7.6-3.2,10.6-0.4c3,2.8,3.2,7.6,0.4,10.6l-15.8,17
+                                        C300.2,43.1,298.2,43.9,296.2,43.9z"/>
+                                    <path d="M260.5,36.9c-4.1,0-7.5-3.4-7.5-7.5v-22c0-4.1,3.4-7.5,7.5-7.5c4.1,0,7.5,3.4,7.5,7.5v22C267.9,33.6,264.6,36.9,260.5,36.9z
+                                        "/>
+                                    <path d="M95.5,253.3V268c0,4.1,3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5v-14.7c0-4.1-3.4-7.5-7.5-7.5S95.5,249.2,95.5,253.3z"/>
+                                    <path d="M504,245c-5.4-2.3-11.5-0.8-15.3,3.6c-11.2,13.2-27.8,17.4-39.8,18.6c-0.6,0.1-1.1-0.3-1.3-0.9c-3-10.3-7.1-20.4-12.4-30.1
+                                        c-6.5-12.1-14.5-23.4-23.6-33.7c-19.8-22.3-44.9-39.5-73.2-50.5c1.7-6.5,2.6-13.3,2.6-20.4c0-44.5-36.2-80.6-80.6-80.6
+                                        c-44.5,0-80.6,36.2-80.6,80.6c0,5.2,0.5,10.4,1.5,15.3c-4.8,1.2-9.6,2.6-14.2,4c-2.1-2.1-4.2-4.1-6.4-6c-3.1-2.7-7.9-2.3-10.6,0.8
+                                        c-2.7,3.1-2.3,7.9,0.8,10.6c3.8,3.2,7.2,6.8,10.4,10.5c6.8,8.1,8.2,18.8,3.9,28.5c-4.4,9.8-13.4,15.9-24.2,16.3l-0.2,0
+                                        c-13.1,0.4-24.8-8.8-27.8-22c-1-4.3-0.7-9.2-0.4-14.3c0.2-3.6,0.4-7.3,0.3-11.1c-0.5-10.2-2.1-20.3-3.7-29.2c5.1,1.4,9.9,3,14.5,4.9
+                                        c3.8,1.6,8.2-0.3,9.8-4.1c1.6-3.8-0.3-8.2-4.1-9.8c-6.2-2.5-12.8-4.6-19.6-6.3c-4.3-1.1-8.8,0.1-12,3.2c-3.2,3.1-4.6,7.5-3.8,11.8
+                                        c1.8,9.5,3.6,19.8,4,30.1c0.1,3-0.1,6.2-0.3,9.5c-0.3,4.3-0.5,8.7-0.1,13.1c-21.4,17.7-37,39.6-46.3,65.2c-1.9,5.2-6.9,8.8-12.5,8.8
+                                        h-6.7C14.4,261.8,0,276.3,0,294v25.3c0,17.8,14.4,32.2,32.2,32.2h4.2c5.8,0,11,3.7,12.8,9.2l0.1,0.1c8.6,25.3,21,41.5,37,58
+                                        c6.9,7.1,14,13.4,21.2,19c3.9,3,8,5.8,12,8.4c3.3,2.1,6.8,3.7,10.3,5.3c5.3,2.5,10.4,4.8,13.4,8.1c2.2,2.5,2.3,4.9,1.8,11.2
+                                        l-0.1,1.6c-0.5,7.7-1.9,16.5-3.1,24.2c-0.6,3.8,0.5,7.7,3,10.6c2.5,2.9,6.1,4.6,10,4.6h36.5c3.2,0,6.2-1.2,8.5-3.3
+                                        c2.2-2,13.4-12.8,18.3-31.7c0-0.1,0.3-0.3,0.5-0.2c9.2,1,18.6,1.5,27.9,1.5c22,0,43.7-2.9,64.4-8.5c0.1,0,0.2-0.1,0.4,0.1
+                                        c0.2,0.1,0.2,0.3,0.2,0.4c0.7,10.3-0.1,22.1-1,26.7c-0.7,3.7,0.3,7.5,2.7,10.5c2.4,2.9,6,4.6,9.8,4.6h55.6c4.7,0,9-2.5,11.2-6.6
+                                        c3.9-7.2,6.8-16.5,8.7-27.7c0.7-4.1-2.1-7.9-6.2-8.6c-4.1-0.7-7.9,2.1-8.6,6.2c-1.4,8.8-3.6,16.1-6.4,21.7h-51.7
+                                        c0.9-6.9,1.4-18.3,0.8-27.9c-0.3-4.6-2.7-8.8-6.5-11.5c-3.8-2.7-8.5-3.5-13-2.3c-19.5,5.3-39.8,8-60.5,8c-8.7,0-17.6-0.5-26.2-1.5
+                                        c-7.6-0.9-14.8,4-16.7,11.3c-3,11.6-9.5,20.1-13.2,23.8h-33.5c1.2-7.5,2.4-15.8,2.9-23.5l0.1-1.5c0.5-6.6,1-14.9-5.6-22.3
+                                        c-5.1-5.7-12.1-8.9-18.3-11.7c-3.1-1.4-6.1-2.8-8.5-4.3c-3.6-2.3-7.3-4.8-10.9-7.6c-6.6-5.1-13.2-11-19.5-17.5
+                                        c-14.6-15.1-25.9-29.8-33.6-52.4l0-0.1c-3.9-11.6-14.8-19.4-27-19.4h-4.2c-9.5,0-17.2-7.7-17.2-17.2V294c0-9.5,7.7-17.2,17.2-17.2
+                                        h6.7c11.8,0,22.5-7.5,26.5-18.6c7.7-21.1,20-39.3,36.9-54.6c7.3,14,21.7,23.2,37.7,23.2c0.5,0,0.9,0,1.4,0l0.2,0
+                                        c16.3-0.5,30.6-10.2,37.3-25.1c5.6-12.5,4.8-26.4-1.7-37.9c16.8-4.9,34.9-8.1,53.7-9.7c22.3-1.8,42-1.4,60.2,1.1
+                                        c43,6,81.8,26.4,109.4,57.4c8.4,9.4,15.7,19.8,21.7,30.9c4.7,8.7,8.5,17.8,11.2,27.1c2.2,7.5,9.4,12.3,17.1,11.6
+                                        c13.5-1.3,31.9-5.8,46-19.7c-3.4,22.2-14.6,47.4-46.7,53.2c-6.7,1.2-12,6.5-13.2,13.1c-9.2,52.4-48.5,86.1-48.9,86.5
+                                        c-1.9,1.6-2.9,4.1-2.6,6.6c0,0.1,0.9,8.3,1.1,19.6c0.1,4.1,3.5,7.4,7.6,7.4c4.1-0.1,7.4-3.5,7.4-7.6c-0.1-7.4-0.5-13.5-0.8-17.1
+                                        c10.1-9.4,42.4-43,51.1-92.7c0.1-0.5,0.5-0.9,1.1-1c34.2-6.2,55.4-31.7,59.6-71.8C512.5,252.7,509.3,247.3,504,245z M291.2,140.2
+                                        c-18.8-2.5-38.9-2.8-61.6-1c-0.1,0-0.1,0-0.2,0c-0.6-2.4-0.9-4.8-0.9-7.4c0-17.6,14.3-31.9,31.9-31.9c17.6,0,31.9,14.3,31.9,31.9
+                                        C292.3,134.7,291.9,137.5,291.2,140.2z M324.3,147.3c-6-1.8-12.1-3.4-18.2-4.6c0.8-3.5,1.3-7.1,1.3-10.8c0-25.8-21-46.8-46.8-46.8
+                                        c-25.8,0-46.8,21-46.8,46.8c0,3.1,0.3,6.1,0.9,9c-6.3,0.8-12.5,1.8-18.6,3.1c-0.7-3.9-1.1-7.9-1.1-12c0-36.2,29.5-65.7,65.7-65.7
+                                        c36.2,0,65.7,29.5,65.7,65.7C326.1,137.2,325.5,142.3,324.3,147.3z"/>
+                                    </svg>
+                            </div>
+                            <p class="adv-title">Paga sólo la cuota de línea</p>
+                        </li>
+                        <li class="advantages-item">
+                            <div class="svg-icon">
+                                <svg version="1.2" baseProfile="tiny" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 750 750" xml:space="preserve">
+                                    <g id="surface1">
+                                        <path d="M562.5,0C458.9,0,375,83.9,375,187.5S458.9,375,562.5,375S750,291.1,750,187.5C749.9,84,666,0.1,562.5,0z M400.6,200h64
+                                            c0.8,25.2,3.9,50.4,9.4,75h-48.2C411.3,252.5,402.7,226.7,400.6,200z M575,75V25.6c9.4,0.7,18.8,2.3,28,4.7
+                                            c6.7,14.5,12.4,29.4,17.1,44.7H575z M627.1,100c5.9,24.6,9.3,49.7,10.2,75H575v-75H627.1z M550,75h-43.3
+                                            c4.8-15.3,10.5-30.2,17.2-44.8l-0.6-0.2c8.8-2.2,17.7-3.7,26.7-4.4V75z M550,100v75h-60.4c0.8-25.3,4.2-50.4,10.2-75H550z
+                                             M464.6,175h-64c2-26.7,10.7-52.5,25.2-75H474C468.5,124.6,465.4,149.8,464.6,175z M489.6,200H550v75h-50.2
+                                            C493.8,250.4,490.4,225.3,489.6,200L489.6,200z M550,300v49.4c-9-0.7-17.9-2.2-26.7-4.3l0.6-0.3c-6.7-14.5-12.4-29.5-17.2-44.8H550
+                                            z M575,300h45.1c-4.8,15.2-10.5,30.2-17.1,44.7c-9.2,2.4-18.5,3.9-28,4.7V300z M575,275v-75h62.2c-0.8,25.3-4.2,50.4-10.2,75H575z
+                                             M662.2,200h62.1c-2,26.7-10.7,52.5-25.2,75h-46.4C658.3,250.4,661.5,225.2,662.2,200z M662.2,175c-0.8-25.2-3.9-50.4-9.4-75h46.4
+                                            c14.5,22.5,23.1,48.3,25.2,75H662.2z M679.5,75h-33.2c-3.2-11-6.9-21.9-11.1-32.6C651.7,50.7,666.7,61.7,679.5,75z M492,41.3
+                                            c-4.3,11.1-8.1,22.3-11.4,33.7h-35C458.9,61.1,474.6,49.7,492,41.3z M445.5,300h35c3.3,11.3,7.1,22.6,11.4,33.7
+                                            C474.6,325.3,458.9,313.9,445.5,300z M635.2,332.6c4.2-10.7,7.8-21.6,11.1-32.6h33.2C666.7,313.3,651.7,324.3,635.2,332.6z"/>
+                                        <path d="M50,662.5h83.4L115.6,725H87.5v25h200v-25h-28.1l-17.9-62.5H325c27.6,0,50-22.4,50-50V425c0-27.6-22.4-50-50-50H50
+                                            c-27.6,0-50,22.4-50,50v187.5C0,640.1,22.4,662.5,50,662.5z M233.4,725h-91.8l17.8-62.5h56.2L233.4,725z M325,637.5H50
+                                            c-13.8,0-25-11.2-25-25v-25h325v25C350,626.3,338.8,637.5,325,637.5z M50,400h275c13.8,0,25,11.2,25,25v137.5H25V425
+                                            C25,411.2,36.2,400,50,400z"/>
+                                        <path d="M325,100h25v25h-25V100z"/>
+                                        <path d="M275,100h25v25h-25V100z"/>
+                                        <path d="M225,100h25v25h-25V100z"/>
+                                        <path d="M175,100h25v25h-25V100z"/>
+                                        <path d="M175,275h25v25h-25V275z"/>
+                                        <path d="M175,325h25v25h-25V325z"/>
+                                        <path d="M400,550h25v25h-25V550z"/>
+                                        <path d="M237.5,200c0-27.6-22.4-50-50-50s-50,22.4-50,50s22.4,50,50,50S237.5,227.6,237.5,200z M187.5,225c-13.8,0-25-11.2-25-25
+                                            s11.2-25,25-25s25,11.2,25,25S201.3,225,187.5,225z"/>
+                                        <path d="M600,562.5c0-27.6-22.4-50-50-50s-50,22.4-50,50s22.4,50,50,50S600,590.1,600,562.5z M525,562.5c0-13.8,11.2-25,25-25
+                                            s25,11.2,25,25s-11.2,25-25,25S525,576.3,525,562.5z"/>
+                                        <path d="M450,550h25v25h-25V550z"/>
+                                        <path d="M625,550h25v25h-25V550z"/>
+                                        <path d="M625,500h25v25h-25V500z"/>
+                                        <path d="M625,450h25v25h-25V450z"/>
+                                        <path d="M625,400h25v25h-25V400z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class="adv-title">Sin coste de instalación</p>
+                        </li>
+                        <li class="advantages-item">
+                            <div class="svg-icon">
+                                <svg version="1.2" baseProfile="tiny" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 750 750" xml:space="preserve">
+                                    <g id="surface1">
+                                        <path d="M712.5,450H700V287.5c0-1.3-0.2-2.7-0.6-3.9L687.5,248V87.5c0-20.7-16.8-37.5-37.5-37.5s-37.5,16.8-37.5,37.5V248
+                                            l-11.9,35.6c-0.4,1.3-0.6,2.6-0.6,3.9V450H425V287.5c0-1.3-0.2-2.7-0.6-3.9L412.5,248V87.5c0-20.7-16.8-37.5-37.5-37.5
+                                            s-37.5,16.8-37.5,37.5V248l-11.9,35.6c-0.4,1.3-0.6,2.6-0.6,3.9V450H150V287.5c0-1.3-0.2-2.7-0.6-3.9L137.5,248V87.5
+                                            c0-20.7-16.8-37.5-37.5-37.5S62.5,66.8,62.5,87.5V248l-11.9,35.6c-0.4,1.3-0.6,2.6-0.6,3.9V450H37.5C16.8,450,0,466.8,0,487.5v125
+                                            C0,633.2,16.8,650,37.5,650H50v37.5c0,6.9,5.6,12.5,12.5,12.5h75c6.9,0,12.5-5.6,12.5-12.5V650h450v37.5c0,6.9,5.6,12.5,12.5,12.5
+                                            h75c6.9,0,12.5-5.6,12.5-12.5V650h12.5c20.7,0,37.5-16.8,37.5-37.5v-125C750,466.8,733.2,450,712.5,450z M636.9,253.9
+                                            c0.4-1.3,0.6-2.6,0.6-3.9V87.5c0-6.9,5.6-12.5,12.5-12.5s12.5,5.6,12.5,12.5V250c0,1.3,0.2,2.7,0.6,3.9l11.9,35.6V375h-50v-85.5
+                                            L636.9,253.9z M625,400h50v50h-50V400z M361.9,253.9c0.4-1.3,0.6-2.6,0.6-3.9V87.5c0-6.9,5.6-12.5,12.5-12.5s12.5,5.6,12.5,12.5
+                                            V250c0,1.3,0.2,2.7,0.6,3.9l11.9,35.6V375h-50v-85.5L361.9,253.9z M350,400h50v50h-50V400z M86.9,253.9c0.4-1.3,0.6-2.6,0.6-3.9
+                                            V87.5c0-6.9,5.6-12.5,12.5-12.5s12.5,5.6,12.5,12.5V250c0,1.3,0.2,2.7,0.6,3.9l11.9,35.6V375H75v-85.5L86.9,253.9z M75,400h50v50
+                                            H75V400z M125,675H75v-25h50V675z M675,675h-50v-25h50V675z M725,612.5c0,6.9-5.6,12.5-12.5,12.5h-675c-6.9,0-12.5-5.6-12.5-12.5
+                                            v-125c0-6.9,5.6-12.5,12.5-12.5h675c6.9,0,12.5,5.6,12.5,12.5V612.5z"/>
+                                        <path d="M662.5,512.5c-20.7,0-37.5,16.8-37.5,37.5s16.8,37.5,37.5,37.5S700,570.7,700,550S683.2,512.5,662.5,512.5z M662.5,562.5
+                                            c-6.9,0-12.5-5.6-12.5-12.5s5.6-12.5,12.5-12.5S675,543.1,675,550S669.4,562.5,662.5,562.5z"/>
+                                        <path d="M250,537.5h37.5v25H250V537.5z"/>
+                                        <path d="M325,537.5h37.5v25H325V537.5z"/>
+                                        <path d="M400,537.5h37.5v25H400V537.5z"/>
+                                        <path d="M475,537.5h37.5v25H475V537.5z"/>
+                                        <path d="M550,537.5h37.5v25H550V537.5z"/>
+                                        <path d="M62.5,537.5H100v25H62.5V537.5z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class="adv-title">Router gratis</p>
+                        </li>
+                    </ul>
+                    <h4 class="brand-v">Consulta tu cobertura</h4>
+                    <form class="fibra-check-frm">
+                        <div class="fibra-check-inputs grid">
+                            <input id="" name="" type="text" placeholder="Nombre" class="rounded" required="">
+                            <input id="Telefono" name="Telefono" type="number" placeholder="Telefono" class="rounded" required="">
+                            <button id="enviar" name="enviar" class="brandbg-v btn btn-rounded">Obtener una consulta</button>
+                            <!--<div class="fibra-check-button">-->
+                                <!---->
+                            <!--</div>-->
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-fleximovil" class="why-fleximovil">
+        <div class="wrapper">
+            <h2 class="white-t">POR QUE FLEXI MOVIL<br>
+                ES MAS MEJOR PARA TU</h2>
+            <div class="reasons-wrapper">
+                <div class="reasons-item">
+                    <h3 class="white-t">SIN PERMANENCIA</h3>
+                    <p class="white-t">tu línea es tuya y haces lo que quieres con ella. En simyo te tratamos lo mejor posible para que te quedes, pero si decides marcharte, puedes hacerlo sin ningún problema. En simyo no hacemos prisioneros.</p>
+                </div>
+                <div class="reasons-item">
+                    <h3 class="white-t">SIN RECARGAS OBLIGATORIAS</h3>
+                    <p class="white-t">cada mes: no tienes que recargar un mínimo todos los meses. Tú decides lo que quieres gastar y cuando. Si un mes no quieres usar tu tarifa y no quieres renovar tu bono, no pasa nada. (Sólo tendrás que recargar una vez cada 6 meses para no cancelar la línea)</p>
+                </div>
+                <div class="reasons-item">
+                    <h3 class="white-t">ROAMING EN EUROPA</h3>
+                    <p class="white-t">(EEE) incluido!! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="reasons-item">
+                    <h3 class="white-t">EXTRA BONOS</h3>
+                    <p class="white-t">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+            <div class="card-cta">
+                <a href="#" class="link_item rounded brand-green cta-btn">Hazte cliente</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-nav">
+            <div class="footer-wrapper wrapper">
+                <div class="footer-column">
+                    <h3 class="white-t">TARIFAS</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Crea tu tarifa</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Movil + Fibra</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Movil Contrato</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Fibra</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Roaming</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Acumular megas</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Toda la info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="white-t">FLEXIMOVIL</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Sobre nosotros</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Para empresas</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Contactos</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Politica de privacidad</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Terminos de usos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="white-t">AREA CLIENTE</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Area cliente</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Pago online</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Ayuda</a></li>
+                        <li class="menu-item"><a href="#" class="menu-item-link white-t">Servicio cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="white-t">
+                        DESCUBRE NUESTRAS APPS GRATUITAS
+                    </h3>
+                    <div class="apps">
+                        <a href="#" class="apps-btn">
+                            <img src="img/apple-btn.png" alt="">
+                        </a>
+                        <a href="#" class="apps-btn">
+                            <img src="img/google-play-btn.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="white-t">PAGO SECURO</h3>
+                        <div class="payments-icons">
+                            <img src="img/safe-payments.png" alt="">
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyrights brandbg-v">
+            <div class="wrapper">
+                <span class="white-t">&copy; Copyright 2019 <a href="#" class="copyright-link white-t">Fleximovil</a></span>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/jquery.radios-to-slider.js"></script>
+    <!--<script type="text/javascript" src="js/mdb.min.js"></script>-->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>

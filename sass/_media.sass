@@ -1,0 +1,318 @@
+@media (max-width: 1199px)
+  html
+    font-size: 14px
+  #top
+    .offer
+      .slide-pic
+        position: relative
+        top: 0
+        left: 0
+        width: 420px
+  #promo
+    .promo-wrapper
+      grid-template-columns: 50% 50%
+
+@media (max-width: 991px)
+  html
+    font-size: 12px
+  .header
+    &-wrapper
+      grid-template-columns: 3fr 4fr 60px
+  #header
+  .header-menu
+    grid-template-columns: 1fr
+    justify-self: end
+    //grid-template-columns: 1fr
+    &__list
+      display: none
+  .burger-menu
+    justify-self: end
+    display: block
+    font-size: 30px
+
+  .header-logo
+    img
+      width: 140px
+
+  .collapse
+    z-index: 50
+    background-color: rgba(255,255,255,.95)
+    position: absolute
+    width: 90%
+    height: 100vh
+    left: 0
+    .header-mob-menu
+      padding: 15px 0
+      display: block
+      .client-area-mob
+        display: block
+        justify-items: stretch
+        padding: 0 20px
+        margin-bottom: 20px
+      &__list
+      &__item
+        align-items: center
+        height: 50px
+        padding-left: 15px
+        border-bottom: 1px solid lighten($brand, 50%)
+      &__link
+        color: $brand
+        font-size: 1.4rem
+  #top
+    .offer
+      display: grid
+      grid-area: 1fr / 1fr
+      .slide-content
+        position: relative
+        .slide-pic
+          position: relative
+          z-index: 1
+          width: 320px
+          align-self: center
+        .description
+          top: 40vh
+    .top-wrapper
+      grid-template-columns: 45% 1fr
+    .calculator h2
+      font-size: 18px
+  #offers
+  .product-list
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 220px
+  .product-item-widget
+    .product-card
+      height: 220px
+      .main-circle
+        height: inherit
+        clip-path: circle(90.2% at 35% -2%)
+        .internal-circle
+          height: inherit
+        .corner-circle
+          clip-path: circle(31.8% at 95% 0)
+          top: -220px
+          .corner-data
+            right: -10px
+            top: 30px
+            width: 115px
+            font-size: 20px
+            .iva
+              margin: 0
+        .product-details
+          width: 90%
+          top: 60px
+          left: 10px
+          small
+            font-size: 0.8rem
+          .list-item
+            display: inline-block
+            font-weight: 500
+            font-size: 12px
+            line-height: 16px
+            margin-bottom: 5px
+            &:before
+              content: '•'
+              margin: 0 5px
+      .card-cta
+        top: -50px
+        position: relative
+        right: -110px
+
+  #why-fleximovil
+    .reasons-wrapper
+      grid-template-columns: repeat(2, 1fr)
+  #fibra-check
+    .fibra-check-content
+      grid-template-columns: 1fr
+      .fibra-check-pic
+        display: none
+    .fibra-advantages-list
+      .svg-icon
+        width: 100px
+        height: 100px
+        svg
+          width: 40px
+  footer
+    grid-template-columns: 1fr 1fr
+    h3
+      font-size: 16px
+    .footer-wrapper
+      .menu-list
+        .menu-item-link
+          line-height: 1.7rem
+
+@media (max-width: 768px)
+  section
+    padding: 20px 0
+  h1
+    font-size: 1.8rem
+    width: 100%
+    text-align: center
+  h2
+    font-size: 20px
+  h3
+    text-align: center
+    margin-bottom: 20px
+  #top
+    .offer
+      grid-template-rows: 60px 1fr;
+      h1
+        font-size: 24px
+        width: 100%
+    .top-wrapper
+      grid-template-columns: 1fr
+      justify-items: center
+      .slide-content
+        position: relative
+        justify-self: start
+        .description
+          //position: relative
+          left: 30vw
+          top: 180px
+      //          //
+      .calculator
+        margin-top: 20px
+        form
+          grid-template-columns: 80vw
+  #promo
+    .promo-wrapper
+      grid-template-columns: 1fr
+      .offer-link
+        .promo-title
+          font-size: 18px
+      .wide-offer
+        padding-top: 20.2%
+      .short-offer
+        padding-top: 20.2%
+  .fibra-promo-wrapper
+    padding: 40px 0
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr
+    .fibra-offer__content
+      padding-top: 100px
+      h4
+        font-size: 2.5rem
+    .fibra-offer__content:nth-child(1)
+      padding-top: 40px
+    .fibra-offer__item
+      img
+        height: 240px
+    .fibra-offer__form
+      grid-template-columns: 1fr
+  #offers
+  .offers-wrapper
+  .product-list
+    grid-template-columns: 1fr
+    grid-template-rows: 180px
+    grid-gap: 20px
+
+    .product-item-widget
+      height: 180px
+      &__title
+        padding-top: 30px
+        &:before
+          right: 45%
+          top: 130px
+          opacity: .4
+          rotate: 90deg
+          transform: rotate(90deg)
+      .product-card
+        height: 180px
+        .main-circle
+          height: inherit
+          clip-path: circle(106.2% at 35% -2%)
+          .product-title
+            font-size: 18px
+            top: 10px
+            left: 10px
+          .internal-circle
+            height: inherit
+          .corner-circle
+            top: -180px
+            clip-path: circle(28.8% at 92% 0)
+            .corner-data
+              width: 100px
+              top: 15px
+              right: 0
+            .info-link
+              display: none
+          .product-details
+            width: 90%
+            top: 60px
+            left: 10px
+            small
+              font-size: 0.8rem
+            .list-item
+              display: inline-block
+              font-weight: 500
+              font-size: 12px
+              line-height: 16px
+              margin-bottom: 5px
+              &:before
+                content: '•'
+                margin: 0 5px
+        .card-cta
+          position: absolute
+          top: 130px
+          right: 10px
+          a
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+  #fibra-check
+    .fibra-advantages-list
+      grid-template-columns: repeat(2, 1fr)
+    .fibra-check-frm
+      grid-template-columns: 1fr
+      button
+        grid-area: span 2
+  #why-fleximovil
+    .reasons-wrapper
+      grid-gap: 10px
+      grid-template-columns: 1fr
+      h3
+        font-size: 18px
+        height: 33px
+  #product-section
+    .promo-wrapper
+      grid-template-columns: 1fr
+  #title-block
+    .optin
+      .callbackform
+        grid-template-columns: 1fr
+        grid-gap: 20px
+  footer
+    .footer-wrapper
+      grid-template-columns: 1fr
+      .menu-list
+        margin-top: 10px
+        margin-bottom: 20px
+        align-items: flex-start
+        .menu-item
+          margin-bottom: 5px
+          padding-left: 10px
+      .apps
+        .apps-btn
+          width: 100px
+
+@media (max-width: 480px)
+  #title-block
+    padding-top: 120px
+
+  h2
+    font-size: 18px
+  .header-menu
+    grid-template-columns: 3fr 60px
+    .client-area
+      display: none
+  #top
+    .offer
+      justify-items: center
+      h1
+        font-size: 2.6rem
+        width: 80%
+        text-align: center
+      .slide-content
+        grid-template-columns: 1fr
+        margin: auto
+        .slide-pic
+          width: 240px
+        .description
+          position: static

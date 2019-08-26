@@ -1,0 +1,970 @@
+@import "reset"
+@import "vars"
+@import "fonts"
+
+html
+  font-size: 14px
+body
+  box-sizing: border-box
+  font-family: Montserrat, sans-serif
+  font-weight: 300
+
+.border
+  border: 1px solid red
+h1
+  font-size: 2.5rem
+  font-weight: 700
+  color: $brand_light
+  small
+    font-size: 1rem
+    display: block
+    font-weight: normal
+    color: $dark-violet
+h2
+  font-size: 36px
+  font-weight: 700
+  text-align: center
+  text-transform: uppercase
+a
+  text-decoration: none
+  transition: 500ms
+  color: #fff
+.warning
+  p
+    border: 2px solid $brand_green
+    padding: 15px
+
+section
+  height: auto
+  padding: 40px 0
+  width: 100%
+.hide
+  display: none
+.show
+  display: block
+.grid
+  display: grid
+.gap
+  grid-gap: 10px
+
+.middle
+  align-items: center
+  justify-items: center
+
+.hstart
+  justify-items: start
+.hend
+  justify-items: end
+.fullwidth
+  width: 100%
+.btn
+  position: relative
+  display: block
+  justify-items: center
+  align-items: center
+  border-radius: 30px
+  align-self: center
+  transition: 500ms
+  max-width: 180px
+  width: 100%
+  font-size: 1rem
+  text-align: center
+  height: 36px
+  padding: 10px
+  background: transparent
+  &:hover
+    background-color: #94ae25
+    color: #fff
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+.shadow
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+.rounded
+  border-radius: 20px
+input
+  font-size: 1rem
+  color: $brand
+button:focus,
+input:focus
+  outline: 0
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+.deep-purple
+  background-color: $brand-light
+.brand-green
+  background-color: $brand_green
+  color: #fff
+.brandbg-v
+  background-color: $brand
+.brandbg-g
+  background-color: $brand_green
+
+.green-btn
+  background-color: $brand_green
+  text-align: center
+
+.white-t
+  color: #ffffff
+p.white-t
+  font-weight: 100
+.brand-v
+  color: $brand
+.brand-vl
+  color: $brand_light
+.brand-g
+  color: $brand_green
+
+/* CALCULATOR * /
+.radios-to-slider
+  background-color: #ececec
+  display: block
+  position: relative
+  margin-bottom: 80px
+  box-sizing: content-box
+
+.radios-to-slider.medium
+  height: 6px
+  border-radius: 25px
+  padding: 5px
+  width: 315px
+
+/* Levels */
+.radios-to-slider .slider-level
+  //background-color: #fff
+  cursor: pointer
+  position: absolute
+  display: block
+
+.radios-to-slider .slider-level.slider-lower-level
+  opacity: 0.2
+.radios-to-slider.medium .slider-level
+  width: 6px
+  height: 6px
+  border-radius: 22px
+  z-index: 2
+
+//label
+.slider-label
+  position: absolute
+  display: block
+  cursor: pointer
+  color: #5e5e5e
+  text-align: center
+
+.slider-label-active
+  font-weight: bold
+.radios-to-slider.medium .slider-label
+  top: 25px
+  width: 35px
+
+/* Slider bar */
+.radios-to-slider .slider-bar
+  background-color: #613b7d
+  float: left
+  height: 100%
+  width: 0
+  pointer-events: none
+  display: none
+  position: absolute
+  left: 0
+  top: 0
+  min-width: 32px !important
+
+.slider-bar.transition-enabled
+  -webkit-transition: .2s
+  -moz-transition: .2s
+  -o-transition: .2s
+  transition: .2s
+
+.radios-to-slider.medium .slider-bar
+  border-radius: 16px
+/* Slider Knob */
+.slider-knob
+  position: relative
+  top: -4px
+  float: right
+  background-color: #ffffff
+  border: 3px solid $brand_green
+.radios-to-slider.medium .slider-knob
+  width: 24px
+  height: 24px
+  -webkit-border-radius: 25px
+  -moz-border-radius: 25px
+  border-radius: 25px
+
+
+//  GENERAL STYLE
+
+.active
+  background-color: #613b7d
+  border-radius: 1.5rem
+  box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.19)
+
+.wrapper
+  max-width: 1200px
+  width: 100%
+  margin: auto
+  padding: 0 15px
+  display: grid
+
+.header
+  position: fixed
+  background-color: $brand_light
+  align-items: center
+  width: 100vw
+  z-index: 999
+  &-topbar
+    background-color: lighten($brand, 20%)
+    padding: 5px 0
+  .topbar-wrapper
+    grid-template-columns: repeat(2, 160px)
+    justify-content: space-between
+    align-items: center
+    .langbar
+      display: grid
+      grid-template-columns: 1fr 1fr
+      justify-items: end
+      font-size: 1rem
+    &-link
+      &:hover,
+      &:active
+        color: $brand_green
+    .phoneNumber
+      font-size: 1.3rem
+      font-weight: 700
+  &-wrapper
+    grid-template-columns: 2fr 10fr
+    height: 65px
+  &-logo
+    width: 160px
+    align-self: center
+    justify-self: start
+    img
+      width: 100%
+.header-menu
+  display: grid
+  grid-template-columns: 9fr 1fr
+  align-items: end
+  &__list
+    display: grid
+    grid-template-columns: repeat(auto-fit, 120px)
+    justify-content: end
+    grid-gap: 5px
+  &__item
+    margin-left: 0
+    height: 36px
+    text-align: center
+    width: auto
+    padding: 10px 0
+    &:hover
+      background-color: #613b7d
+      border-radius: 1.5rem
+      box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.19)
+  &__link
+    color: #ffffff
+    font-weight: 500
+    font-size: 1rem
+  .client-area
+    width: 160px
+    i
+      margin-right: 10px
+    span
+      text-wrap: revert
+.burger-menu
+  display: none
+  font-size: 2rem
+.cta-btn
+  width: 160px
+  padding: 10px 35px
+  background-color: $brand_green
+  font-weight: 500
+  margin: 0 20px
+  text-align: center
+  align-self: center
+  transition: 500ms
+  &:hover
+    background-color: #94ae25
+    color: #fff
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+
+.header-nav-mob
+  //position: relative
+  left: -90vh
+  //width: 0
+  //height: 0
+  transition: .5s
+  .header-mob-menu
+    display: none
+    .client-area-mob
+      display: none
+  &__bottom-menu
+    background-color: $brand_light
+    height: 500px
+// MAIN CONTENT
+#top
+  height: auto
+  background: $grey
+  .top-wrapper
+    display: grid
+    grid-gap: 10px
+    grid-template-columns: 1fr 370px
+    margin-top: 80px
+  .offer
+    grid-template-rows: 100px 1fr
+    h1
+      color: rgba(0, 0, 0, 0.8)
+      line-height: 1.2
+      text-align: left
+      width: 60%
+      font-size: 2.7rem
+  .slide-content
+    position: relative
+    display: grid
+    .slide-pic
+      position: relative
+      top: 0
+      left: 20px
+      width: 500px
+    .description
+      align-self: center
+      position: absolute
+      font-size: 1.2rem
+      width: 280px
+      z-index: 2
+      top: 30vh
+      right: 0
+      &:before
+        position: absolute
+        content: "\f0da"
+        font-size: 5rem
+        z-index: -1
+        font-family: FontAwesome, sans-serif
+        color: $brand_green
+        right: 60px
+        opacity: .6
+  .calculator
+    h2
+      font-size: 24px
+      font-weight: bold
+      line-height: 20px
+      sub
+        font-size: 16px
+        color: $brand
+        font-weight: normal
+    form
+      background-color: #ffffff
+      border-radius: 20px
+      height: 460px
+      margin: 10px 0
+      padding: 15px 10px
+      box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.15)
+      .form-item
+        margin-top: 17px
+      .form-item:nth-child(1)
+        margin-top: 0
+      h3
+        font-size: 14px
+        font-weight: 600
+        color: $brand
+        margin-bottom: 10px
+      label
+        font-size: 12px
+.calculator__block
+  background-color: #f7f7f7
+  border-radius: 20px
+  position: relative
+  height: 74px
+  box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.07)
+  padding: 20px 10px
+.calculator-total
+  display: flex
+  flex-flow: row
+  justify-content: space-between
+  align-items: center
+  padding: 15px 0
+  .calculator-sum
+    flex-basis: 50%
+    margin-left: 15px
+    .heading
+      font-size: 12px
+      font-weight: bold
+      text-transform: uppercase
+      color: #613b7d
+      margin: 0
+    .total-sum
+      font-size: 29px
+      line-height: 29px
+      font-weight: bold
+      color: $brand
+      margin: 10px 0
+      span
+        font-weight: normal
+        font-size: 12px
+  .calculator-cta
+    padding: 0 20px
+    width: 100%
+    display: flex
+    justify-items: flex-end
+    a
+      text-align: center
+      &:hover
+        color: #ffffff
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+#promo
+.promo-wrapper
+  grid-template-columns: 70% 30%
+  grid-gap: 10px
+  .offer-link
+    position: relative
+    padding-bottom: 40px
+    padding-right: 40px
+    padding-left: 40px
+    z-index: 1
+    &:after
+      position: absolute
+      content: ''
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      z-index: -1
+      background-image: linear-gradient(0deg, rgba(26,26,26,.6) 0%, rgba(114,66,149,0) )
+    .promo-title
+      position: relative
+      color: #fff
+      font-size: 36px
+      font-weight: 600
+      transition: 1s
+  .offer-link:hover .promo-title
+    letter-spacing: 1px
+    font-weight: 500
+  .wide-offer
+    background-size: cover
+    padding-top: 40.2%
+  .short-offer
+    background: url("../img/fibra-para-siempre.jpg") no-repeat center
+    background-size: cover
+    padding-top: 53.64%
+
+
+.fibra-promo-wrapper
+  grid-template-columns: 1fr 1fr
+  .offer-link
+    position: relative
+    padding-bottom: 40px
+    padding-right: 40px
+    padding-left: 40px
+    z-index: 1
+    &:after
+      position: absolute
+      content: ''
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      z-index: -1
+      background-image: linear-gradient(0deg, rgba(26,26,26,.6) 0%, rgba(114,66,149,0) )
+  .promo-title
+    position: relative
+    color: #fff
+    font-size: 36px
+    font-weight: 600
+    transition: 1s
+  .offer-link:hover .promo-title
+    letter-spacing: 1px
+    font-weight: 500
+  .fibra-offer
+    margin-top: 20px
+    grid-template-rows: 1fr 1fr
+    color: #fff
+    grid-gap: 15px
+    &__item
+      z-index: 1
+      position: relative
+      background-color: $brand
+      img
+        position: relative
+        top: 0
+        left: 0
+        object-fit: cover
+        width: 100%
+        height: 285px
+        z-index: 0
+      &:after
+        position: absolute
+        content: ''
+        left: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        z-index: 1
+        background-image: linear-gradient(0deg, rgba(26,26,26,.6) 0%, rgba(114,66,149,0) )
+    &__content
+      position: absolute
+      z-index: 2
+      top: 0
+      left: 0
+      padding: 100px 40px 40px 40px
+      color: #fff
+      width: 100%
+      h4
+        font-size: 3rem
+      strong
+        margin-bottom: 20px
+        font-size: 1.7rem
+      .card-cta
+        display: grid
+        justify-items: end
+        grid-template-columns: 1fr 1fr
+        strong
+          font-size: 3rem
+        small
+          font-size: 1rem
+        .btn
+          background: transparent
+          display: grid
+          align-content: center
+          border: 1px solid #fff
+          max-width: 180px
+          &:hover
+            background-color: $brand_green
+            border: none
+    &__form
+      grid-template-columns: 1fr 1fr
+      grid-gap: 10px
+
+      input
+        width: 100%
+        height: 36px
+        border: 0
+        padding: 0 15px
+      button
+        padding: 9px 0
+        border: none
+        color: #fff
+
+#offers
+  background-color: #ebebeb
+  .offers-wrapper
+    display: grid
+    grid-template-columns: 1fr
+  h2
+    color: $brand
+    text-align: center
+    margin-bottom: 15px
+.product-list
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-gap: 20px
+.product-item-widget
+  position: relative
+  .calculator
+    position: relative
+    h2
+      font-size: 18px
+      margin-bottom: 10px
+    h3
+      font-size: 1rem
+      font-weight: normal
+      margin-bottom: 10px
+    form
+      box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.15)
+      padding: 15px
+      background-color: #f7f7f7
+      border-radius: 15px
+    .form-item
+      margin-bottom: 10px
+    .calculator-sum
+      display: grid
+      grid-template-columns: 1fr 1fr
+    label
+      font-size: 12px
+    p
+      margin: 0
+    .heading
+      font-size: 1rem
+      align-self: center
+    .total-sum
+      text-align: right
+      font-size: 1.8rem
+      font-weight: 700
+      span
+        font-weight: normal
+        font-size: 0.4em
+    .calculator-cta
+      margin-top: 5px
+      display: grid
+      justify-self: center
+
+  &__title
+    padding-top: 60px
+    text-align: center
+    font-size: 3rem
+    color: $brand
+    text-shadow: -6px 4px 2px #54479714
+    &:before
+      position: absolute
+      content: "\f067"
+      font-size: 5rem
+      z-index: 2
+      font-family: FontAwesome, sans-serif
+      color: $brand
+      left: -10px
+      top: 120px
+      opacity: .4
+    small
+      font-size: 2rem
+      display: block
+      color: $brand_green
+
+  .product-card
+    background-color: #f7f7f7
+    height: 370px
+    border-radius: 15px
+    position: relative
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05)
+    transition-duration: 500ms
+    &:hover
+      margin-top: -5px
+      box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.10)
+    .main-circle
+      border-radius: 15px
+      position: relative
+      height: 320px
+      clip-path: circle(61.2% at 52% 33%)
+      -webkit-clip-path: circle(61.2% at 52% 33%)
+      .internal-circle
+        z-index: 1
+        height: 370px
+        position: relative
+        background-color: rgba(255,255,255,.2)
+        clip-path: circle(82.7% at 98% 84%)
+        -webkit-clip-path: circle(82.7% at 98% 84%)
+        .product-title
+          position: absolute
+          color: #fff
+          z-index: 6
+      .product-title
+        position: absolute
+        top: 18px
+        left: 18px
+        font-size: 24px
+        font-weight: bold
+        line-height: 1.2
+        text-align: left
+        max-width: 45%
+      .corner-circle
+        background-color: #fff
+        -webkit-clip-path: circle(49.8% at 92% 0)
+        clip-path: circle(49.8% at 92% 0)
+        position: relative
+        z-index: 2
+        top: -370px
+        right: -1px
+        height: 115px
+        border-radius: 15px
+        .info-link
+          position: relative
+          left: 90%
+          top: 10px
+          text-align: right
+          i
+            font-size: 16px
+            color: $brand_light
+        .corner-data
+          text-align: center
+          color: $brand
+          position: relative
+          z-index: 6
+          font-size: 30px
+          right: 0
+          top: 40px
+          width: 115px
+          float: right
+          .corner-price
+            font-weight: 700
+            margin: 0
+            line-height: 24px
+            span
+              font-size: 24px
+          .iva
+            font-size: 10px
+            color: #000
+            padding-left: 5px
+      .product-details
+        position: absolute
+        top: 100px
+        left: 30px
+        .list-item
+          font-size: 14px
+          font-weight: 500
+          line-height: 30px
+    .card-cta
+      padding: 0 40px
+      display: flex
+      justify-content: space-around
+  strong
+    color: #fff
+    text-transform: uppercase
+    //padding: 0 15px
+    //text-align: left
+    //display: block
+  &-form-item
+    margin: 20px 0
+  input
+    width: 100%
+    height: 36px
+    border: 0
+    padding: 15px
+  button
+    width: 100%
+    height: 36px
+    border: 0
+    color: #fff
+
+.product-item-widget:nth-child(2) .main-circle
+  background-color: $cyan
+.product-item-widget:nth-child(3) .main-circle
+  background-color: $dark-yellow
+.product-item-widget:nth-child(4) .main-circle
+  background-color: $dark-violet
+#fibra-check
+  height: auto
+  background-color: $brand_green
+  .fibra-wrapper
+    display: grid
+    grid-template-columns: 1fr
+  .fibra-check-content
+    margin-top: 40px
+    grid-template-columns: 30% 70%
+    justify-items: center
+    img
+        width: 100%
+        height: auto
+  .fibra-advantages-list
+    position: relative
+    grid-template-columns: repeat(4, 25%)
+    .advantages-item
+      color: $dark-violet
+      display: grid
+      justify-items: center
+    .adv-title
+      margin-top: 15px
+      padding: 15px
+      font-weight: 500
+      text-align: center
+      color: #ffffff
+      text-transform: uppercase
+      align-self: start
+    .svg-icon
+      width: 140px
+      height: 140px
+      text-align: center
+      background: #f7f7f7
+      border-radius: 50%
+      display: grid
+      justify-items: center
+      align-items: center
+      box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.19)
+      svg
+        width: 50px
+        height: auto
+        fill: $dark-violet
+  .fibra-check-adv
+    display: grid
+    grid-template-columns: 100%
+  h4
+    font-size: 2rem
+    text-align: center
+    margin-bottom: 20px
+    text-transform: uppercase
+  .fibra-check-frm
+    justify-items: center
+    padding: 0 15px
+    grid-gap: 10px
+    .fibra-check-inputs
+      grid-template-columns: 35% 35% 30%
+      grid-gap: 15px
+      margin-bottom: 15px
+      input
+        //justify-self: stretch
+        background-color: #f7f7f7
+        height: 40px
+        border: 0
+        padding: 0 15px
+        &:focus
+          outline: 0
+
+    button
+      min-width: 100%
+      border: 0
+      color: #ffffff
+      padding: 0 40px
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+      &:hover
+        background-color: $dark-violet
+
+#why-fleximovil
+  background-color: #544797
+  .reasons-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-gap: 30px
+    margin-top: 40px
+    .reasons-item
+      position: relative
+      z-index: 1
+      &:before
+        content: ''
+        position: absolute
+        background: url("../img/triangle.svg") no-repeat center
+        background-size: contain
+        width: 50px
+        height: 50px
+        right: 5px
+        opacity: .7
+        z-index: -1
+    h3
+      font-size: 24px
+      width: 220px
+      height: 66px
+      margin: auto
+      text-align: center
+    p
+      word-break: break-word
+      text-align: justify
+  .card-cta
+    text-align: center
+    margin: 30px auto 15px
+    a
+      border-radius: 30px
+      height: 36px
+
+#title-block
+  background-color: $grey
+  padding-top: 130px
+  .optin
+    background-color: $brand-green
+    padding: 20px 10PX
+    .callbackform
+      grid-template-columns: 4fr 1fr 1fr
+      align-items: center
+      justify-items: start
+      grid-gap: 10px
+      p
+        color: #fff
+        text-align: center
+        font-size: 1.3rem
+        font-weight: 100
+        margin: 0
+      &-form-item
+        width: 100%
+        justify-items: end
+
+      input
+        width: 240px
+        height: 36px
+        justify-self: center
+        border: 0px
+        padding: 0 20px
+      button
+        background-color: $brand
+        border: 0
+        align-self: center
+        // border: 1px solid #fff
+        color: #fff
+        padding: 7px 10px
+        &:hover
+          background-color: #fff
+          border: none
+          color: $brand
+
+.about-us
+  &__paragraph
+    margin: 10px 0
+    grid-template-areas: 'paragraph thumb'
+    grid-template-columns: 3fr 4fr
+    align-items: center
+  &__paragraph:nth-child(2)
+    grid-template-areas: 'thumb paragraph'
+    grid-template-columns: 4fr 3fr
+
+  &__text
+    //grid-column: 3fr
+    grid-area: paragraph
+  &__thumbnail
+    //grid-column: 5fr
+    grid-area: thumb
+    img
+      width: 100%
+
+#product-section
+  .promo-wrapper
+    grid-template-columns: 1fr 1fr
+
+footer
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
+  height: auto
+  background-color: $brand_lighter
+  h3
+    font-size: 18px
+    font-weight: bold
+    text-align: center
+    margin: 0
+  .footer-wrapper
+    padding: 40px
+    display: grid
+    grid-template-columns: repeat(4, minmax(100px, 360px))
+    grid-gap: 15px
+    .menu-list
+      margin-top: 25px
+      display: flex
+      flex-flow: column nowrap
+      align-items: flex-start
+      .menu-item
+        padding-left: 40px
+      .menu-item-link
+        transition: 500ms
+        transition-property: letter-spacing
+      .menu-item-link:hover
+        letter-spacing: 1px
+        color: $brand_green
+    .apps
+      margin-top: 15px
+      margin-bottom: 25px
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-around
+      align-items: center
+      .apps-btn
+        width: 120px
+        img
+          width: 100%
+    .payments-icons
+      height: 30px
+      width: auto
+      margin-top: 15px
+      text-align: center
+      img
+        height: 100%
+  .footer-copyrights
+    height: 40px
+    position: relative
+    align-items: center
+    padding: 10px 0
+    .copyright-link:hover
+      letter-spacing: 1px
+      color: $brand_green
+
+
+@import "media"
+
+
+
+
+
+
+
+
+
+
